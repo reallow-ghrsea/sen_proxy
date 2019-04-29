@@ -1,0 +1,41 @@
+.allContent {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.sideBarContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px;
+  background-color: white;
+  z-index: 2;
+}
+
+#agentContact {
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+#nearbySimilar {
+  width: 310px;
+}
+
+.houseContainer{
+  display: flex;
+  width: 60vw;
+  flex-direction: column;
+  margin-left: 14%;
+  align-content: center;
+}
+
+#homeValue{
+  /* align-self: flex-start; */
+
+}
+
+
+#photoCarousel {
+  z-index: 0;
+}

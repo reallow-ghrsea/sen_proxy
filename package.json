@@ -1,0 +1,30 @@
+{
+  "name": "steve-proxy-server",
+  "version": "1.0.0",
+  "description": "combines team components",
+  "main": "./server.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xillow-talk/steve-proxy-server.git"
+  },
+  "author": "Steve Duong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xillow-talk/steve-proxy-server/issues"
+  },
+  "homepage": "https://github.com/xillow-talk/steve-proxy-server#readme"
+}
