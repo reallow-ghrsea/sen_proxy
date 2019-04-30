@@ -1,16 +1,13 @@
 const express = require('express');
 const path = require('path');
-const morgan = require('morgan');
 const axios = require('axios');
 const cors = require('cors');
 require('newrelic');
 
-const servicePath = 'http:localhost:8081';
-
 const app = express();
 const port = process.env.PORT || 9000;
 
-app.use(morgan('dev'));
+
 
 console.log(__dirname);
 
