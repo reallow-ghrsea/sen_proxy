@@ -3,6 +3,7 @@ const path = require('path');
 const morgan = require('morgan');
 const axios = require('axios');
 const cors = require('cors');
+require('newrelic');
 
 const servicePath = 'http:localhost:8081';
 
@@ -32,19 +33,6 @@ app.get("/houseId", cors(), (req, res) => {
       console.log(e);
     });
 });
-
-// app.get("/houseId/premierAgents/:houseId/:id", cors(), (req, res) => {
-//   let houseId = req.params.houseId + req.params.id;
-//   axios
-//     .get(`http://localhost:8081/houseId/listedAgent/${houseId}`)
-//     .then(data => {
-//       res.send(data.data);
-//     })
-//     .catch(e => {
-//       console.log(e);
-//     });
-// });
-
 
 
 app.listen(port, () => {
